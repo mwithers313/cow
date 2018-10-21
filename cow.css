@@ -1,0 +1,24 @@
+
+#cow {
+  position:absolute;
+  left:820px;
+  top:510px;
+  width:200px;
+  height: 200px;
+  background-image: url('cow.png');
+  
+  }
+
+hr {
+  margin-top: 150px;
+  }
+
+#grass {
+
+  background-image: url('thick_grass.png');
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height:800px;
+  
+  }
