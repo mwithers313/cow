@@ -11,6 +11,29 @@
   
   }
 
+  #cowFriend {
+    position: absolute;
+    left: 2152px;
+    top: 188px;
+    width: 124px;
+    height: 200px;
+    background-image: url(cow.png);
+    transform: rotate(227deg);
+    background-position: center;
+}
+
+
+#cowFriend1 {
+  position: absolute;
+  left: 2152px;
+  top: 343px;;
+  width: 124px;
+  height: 200px;
+  background-image: url(cow.png);
+  transform: rotate(285deg);
+  background-position: center;
+}
+
 .Nfence{
   left: 0px;
   top: 0px;
@@ -32,22 +55,48 @@
 }
 
   .stuff {
-margin-top: 100px;
 position: fixed;
-bottom:0;
-right:0;
+bottom:24px;
+right:121px;
 }
 
-  
+.execute {
 
+    margin-top: 100px;
+    position: fixed;
+    bottom:4px;
+    right:4px;
+    }
+
+
+  .button1
+{
+
+  margin-left: 50px;
+}
+
+.button2{
+  margin-left: 57px;
+}
+
+.button3{
+  margin-left: 35px;
+}
+
+.button4{
+  margin-left: 27px;
+}
   .commands {
 
     background-color:  whitesmoke;
-    width: 275px;
+    width: 100px;
     height: 200px;
     position: fixed;
     bottom:25px;
     right:5px;
 }
 
+.instructions{
+  background-color: aqua;
+}
   

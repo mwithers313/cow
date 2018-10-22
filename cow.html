@@ -4,6 +4,8 @@
 	<title>Cow</title>
 	<link rel="stylesheet" href="cow.css">
   <script src="jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
   <script type="text/javascript" src= "cow.js"></script>
 </head>
    
@@ -13,20 +15,37 @@
 ">
 
 <div class = "stuff">
-  <button onclick="right()">Right</button>
+  <div class="button1">
+  <button onclick="right(), addRight()" class="rClick">Right</button>
+  </div>
+  <div class="button2">
   <button onclick="left()">Left</button>
-
-  <button onclick="forward()">Forward</button>
-  <button onclick="backward()">Backward</button>
-  <button onclick="execute()">Execute</button>
 </div>
-<div class="commands"></div>
+<div class="button3">
+  <button onclick="forward()">Forward</button>
+  </div>
+  <div class="button4">
+  <button onclick="backward()">Backward</button>
+  </div>
+</div>
+
+<button onclick="execute()" class="execute">Execute</button>
+
+<div class="commands" id="commands">
+</div>
+
+
+
+</div>
+
 
 <div class="Nfence"></div>
 <div class="Sfence"></div>
 
 
 <div id="cow"></div>
+<div id="cowFriend"></div>
+<div id="cowFriend1"></div>
 
 </body>
 </html>

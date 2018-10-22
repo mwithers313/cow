@@ -1,31 +1,88 @@
 
+
+//Cow and starting placement
 var cow = {
   yAxis: 220,
   xAxis: 52,
   direction: 2
 }
 
+
+//array that stores sequence of instructions
 var commands = [];
 
+
+
+
+//right button
 function right(){
+
 commands.push("r");
-// execute(); 
-//add if we dont want to use execute button
+// execute(); add if we dont want to use execute button
+
+var newRow = document.createElement('span');
+newRow.className = 'instructions';
+
+newRow.innerHTML = `
+         R,
+`
+  document.getElementById('commands').appendChild(newRow);
+
 }
 
+
+
+
+//left button
 function left(){
+
   commands.push("l");
-  // execute(); 
-  }
+// execute(); add if we dont want to use execute button
+
+var newRow = document.createElement('span');
+newRow.className = 'instructions';
+
+newRow.innerHTML = `
+        L, 
+`
+  document.getElementById('commands').appendChild(newRow);
+}
+
+
+
+
+//forward button
 function forward(){
+
 commands.push("f");
 // execute();
-  }
 
+var newRow = document.createElement('span');
+newRow.className = 'instructions';
+
+newRow.innerHTML = `
+         F, 
+`
+  document.getElementById('commands').appendChild(newRow);
+}
+
+
+
+//back button
 function backward(){
-  commands.push("b")
+
+commands.push("b")
   // execute();
-  }
+
+var newRow = document.createElement('span');
+newRow.className = 'instructions';
+
+newRow.innerHTML = `
+         B, 
+`
+  document.getElementById('commands').appendChild(newRow);
+}
+  
 
 
 
@@ -33,12 +90,18 @@ function backward(){
   //loops through array of commands and executes
 function execute(){
 
+  //use jQuery to clear out the command window
+  $("span.instructions").remove();
+
+
 for (var i = 0; i < commands.length; i++){
  
+
+  //forward button
+
 if(commands[i] == "f" && cow.direction == 1){
 setTimeout(function(){ cow.yAxis -= 60; }, i * 500);
 }
-//forward button
 else if(commands[i] == "f" && cow.direction == 2){
     setTimeout(function(){ cow.xAxis += 60; }, i * 500);
   }
@@ -49,7 +112,9 @@ else if(commands[i] == "f" && cow.direction == 2){
       setTimeout(function(){ cow.xAxis -= 60; }, i * 500);
     }
 
+
 //back button
+
 if(commands[i] == "b" && cow.direction == 1){
   setTimeout(function(){cow.yAxis += 60; }, i * 500);
 
@@ -113,13 +178,18 @@ if(commands[i] == "b" && cow.direction == 1){
           
                   } 
 
-                  //used to help find collision position
+                  //used to help me find fence collision position
                   console.log("x axis = " + cow.xAxis + " " + "y axis = " + cow.yAxis);
 }
 
 commands = []; //clear the array of commands
  }
 
+
+
+
+
+ //setting the interval for the window while adjusting cows location
  window.setInterval(function makeStuffMove() {
   
   //below statements check for fence collision 
@@ -134,8 +204,13 @@ commands = []; //clear the array of commands
      cow.xAxis = 52;
    }
 
+   if (cow.xAxis > 1672){
+    cow.xAxis = 1672;
+  }
+
   document.getElementById("cow").style.left = (cow.xAxis) + "px";
   document.getElementById("cow").style.top = (cow.yAxis) + "px";
   }, 500);
+
 
 
