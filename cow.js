@@ -97,6 +97,8 @@ function execute(){
 for (var i = 0; i < commands.length; i++){
  
 
+ 
+
   //forward button
 
 if(commands[i] == "f" && cow.direction == 1){
@@ -176,13 +178,39 @@ if(commands[i] == "b" && cow.direction == 1){
                   setTimeout(function(){ document.getElementById('cow').style.transform = "rotate(180deg)"; }, i * 500);
                   cow.direction = 3;
           
-                  } 
+                  }
+                  
+                  if(cow.xAxis == 2152 && cow.yAxis ==100 && cow.direction == 1){
+                    alert("Are you trying to kiss me?! We've just met");
+                  }
+
+                  if(cow.xAxis == 2252 && cow.yAxis ==100 && cow.direction == 1){
+                    alert("I'm starting to think you're flirting with me");
+                  }
+
+                  if(cow.xAxis == 2152 && cow.yAxis ==160 && cow.direction == 3){
+                    alert("Somebody needs a bath");
+                  }
+
+                  if(cow.xAxis == 2252 && cow.yAxis ==100 && cow.direction == 1){
+                    alert("Well this is awkward");
+                  }
+                  if(cow.xAxis == 2692 && cow.yAxis ==460 && cow.direction == 2){
+                    alert("Better MOO've on back the other way");
+                  }
+
+
+
+
+
 
                   //used to help me find fence collision position
                   console.log("x axis = " + cow.xAxis + " " + "y axis = " + cow.yAxis);
 }
 
 commands = []; //clear the array of commands
+
+
  }
 
 
@@ -207,6 +235,9 @@ commands = []; //clear the array of commands
    if (cow.xAxis > 2830){
     cow.xAxis = 2830;
   }
+
+ 
+  
 
   document.getElementById("cow").style.left = (cow.xAxis) + "px";
   document.getElementById("cow").style.top = (cow.yAxis) + "px";

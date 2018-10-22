@@ -13,20 +13,20 @@
 
   #cowFriend {
     position: absolute;
-    left: 2152px;
-    top: 188px;
+    left: 2217px;
+    top: -49px;
     width: 124px;
     height: 200px;
     background-image: url(cow.png);
-    transform: rotate(227deg);
+    transform: rotate(211deg);
     background-position: center;
 }
 
 
 #cowFriend1 {
   position: absolute;
-  left: 2152px;
-  top: 335px;
+  left: 2942px;
+  top: 462px;
   width: 124px;
   height: 200px;
   background-image: url(cow.png);
