@@ -18,7 +18,8 @@ var commands = [];
 function right(){
 
 commands.push("r");
-// execute(); add if we dont want to use execute button
+execute(); 
+//add if we dont want to use execute button
 
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
@@ -37,8 +38,7 @@ newRow.innerHTML = `
 function left(){
 
   commands.push("l");
-// execute(); add if we dont want to use execute button
-
+execute();
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
 
@@ -55,7 +55,7 @@ newRow.innerHTML = `
 function forward(){
 
 commands.push("f");
-// execute();
+execute();
 
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
@@ -72,7 +72,7 @@ newRow.innerHTML = `
 function backward(){
 
 commands.push("b")
-  // execute();
+  execute();
 
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
@@ -204,8 +204,8 @@ commands = []; //clear the array of commands
      cow.xAxis = 52;
    }
 
-   if (cow.xAxis > 1672){
-    cow.xAxis = 1672;
+   if (cow.xAxis > 2830){
+    cow.xAxis = 2830;
   }
 
   document.getElementById("cow").style.left = (cow.xAxis) + "px";

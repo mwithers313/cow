@@ -26,11 +26,11 @@
 #cowFriend1 {
   position: absolute;
   left: 2152px;
-  top: 343px;;
+  top: 335px;
   width: 124px;
   height: 200px;
   background-image: url(cow.png);
-  transform: rotate(285deg);
+  transform: rotate(290deg);
   background-position: center;
 }
 
@@ -56,15 +56,14 @@
 
   .stuff {
 position: fixed;
-bottom:24px;
+top:0;
 right:121px;
 }
 
 .execute {
 
-    margin-top: 100px;
     position: fixed;
-    bottom:4px;
+    top:205px;
     right:4px;
     }
 
@@ -92,7 +91,7 @@ right:121px;
     width: 100px;
     height: 200px;
     position: fixed;
-    bottom:25px;
+    top:0;
     right:5px;
 }
 
