@@ -1,24 +1,53 @@
 
 #cow {
   position:absolute;
-  left:820px;
-  top:510px;
-  width:200px;
+  left: 52px;
+  top: 220px;
+  width: 124px;
   height: 200px;
   background-image: url('cow.png');
+  transform: rotate(90deg);
+  background-position: center;
   
   }
 
-hr {
-  margin-top: 150px;
-  }
-
-#grass {
-
-  background-image: url('thick_grass.png');
+.Nfence{
+  left: 0px;
+  top: 0px;
+  height: 120px;
+  width: 100%;
+  background-image: url('fence.png');
   background-repeat: repeat-x;
-  background-repeat: repeat-y;
-  background-size: cover;
-  height:800px;
+}
+
+.Sfence{
+  height: 120px;
+  width: 100%;
+  background-image: url('fence.png');
+  background-repeat: repeat-x;
+  position:absolute;
+  left: 0px;
+  top: 700px;
+ 
+}
+
+  .stuff {
+margin-top: 100px;
+position: fixed;
+bottom:0;
+right:0;
+}
+
   
-  }
+
+  .commands {
+
+    background-color:  whitesmoke;
+    width: 275px;
+    height: 200px;
+    position: fixed;
+    bottom:25px;
+    right:5px;
+}
+
+  
