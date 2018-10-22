@@ -18,7 +18,7 @@ var commands = [];
 function right(){
 
 commands.push("r");
-execute(); 
+// execute(); 
 //add if we dont want to use execute button
 
 var newRow = document.createElement('span');
@@ -38,7 +38,7 @@ newRow.innerHTML = `
 function left(){
 
   commands.push("l");
-execute();
+// execute();
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
 
@@ -55,7 +55,7 @@ newRow.innerHTML = `
 function forward(){
 
 commands.push("f");
-execute();
+// execute();
 
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
@@ -72,7 +72,7 @@ newRow.innerHTML = `
 function backward(){
 
 commands.push("b")
-  execute();
+  // execute();
 
 var newRow = document.createElement('span');
 newRow.className = 'instructions';
