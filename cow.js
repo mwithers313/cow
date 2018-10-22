@@ -180,24 +180,17 @@ if(commands[i] == "b" && cow.direction == 1){
           
                   }
                   
+
+                  //making a cow say stuff if ran into for fun
                   if(cow.xAxis == 2152 && cow.yAxis ==100 && cow.direction == 1){
                     alert("Are you trying to kiss me?! We've just met");
                   }
 
-                  if(cow.xAxis == 2252 && cow.yAxis ==100 && cow.direction == 1){
-                    alert("I'm starting to think you're flirting with me");
-                  }
-
-                  if(cow.xAxis == 2152 && cow.yAxis ==160 && cow.direction == 3){
+                  if(cow.xAxis == 2152 && cow.yAxis ==100 && cow.direction == 3){
                     alert("Somebody needs a bath");
                   }
 
-                  if(cow.xAxis == 2252 && cow.yAxis ==100 && cow.direction == 1){
-                    alert("Well this is awkward");
-                  }
-                  if(cow.xAxis == 2692 && cow.yAxis ==460 && cow.direction == 2){
-                    alert("Better MOO've on back the other way");
-                  }
+                 
 
 
 
